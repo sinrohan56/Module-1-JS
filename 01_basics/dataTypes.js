@@ -1,5 +1,7 @@
 "use strict"; // this enables the engine to treat all JS code as the newer version.
 
+// In JavaScript, instructions are called statements and are separated by semicolons (;).
+
 console.log(a)  console.log(b)  //This will give an error because there is no distinguisher between two actions. we can give a semicolon to distinguish it. |
 console.log(a);  console.log(b)
 

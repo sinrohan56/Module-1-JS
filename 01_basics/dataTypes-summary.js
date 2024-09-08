@@ -18,3 +18,8 @@ const myFunction = function(){
 }
 
 console.log(typeof heroes)
+
+
+//+++++++++++++++++++++++++Memory+++++++++++++++++++++++++++++
+
+//Stack(Primitive DT- Gives a copy of any value) and Heap(Non-primitive)

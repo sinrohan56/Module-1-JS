@@ -7,9 +7,11 @@ c = "ro"
 
 let i; // this returns undefined as ithing is defiend in the variable.
 
+//lets know all the brackets.
 
-
- 
+// () - paranthesis
+// [] - brackets
+// {} -curly braces
 
 
 

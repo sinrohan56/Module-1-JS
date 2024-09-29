@@ -1,6 +1,6 @@
 //for each loops in array.
 //we can also use this for each and acces objects withing an array.
-
+//Thjis doesn't return anything, this is just loop that iterates.
 
 const coding = ["js", "ruby", "java", "python", "cpp"]
 

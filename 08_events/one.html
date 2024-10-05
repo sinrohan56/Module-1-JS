@@ -38,7 +38,8 @@
     // document.getElementById('images').addEventListener('click', function(e){
     //     console.log("clicked inside the ul");
     // }, false)
-//tHIRD PARAMETER IS DEFAULT FALSE, BUT TRUE IS ALSO THERE, AND THE CONCEPT BEHIND THESE ARE- **true - The handler is executed in the capturing phase(OUTER TO INNER EXCECUTION). **false - The handler is executed in the bubbling phase(INNER TO OUTER EXCECUTION).
+
+  //Event Propagation -> THIRD PARAMETER IS DEFAULT FALSE, BUT TRUE IS ALSO THERE, AND THE CONCEPT BEHIND THESE ARE- **true - The handler is executed in the capturing phase(OUTER TO INNER EXCECUTION). **false - The handler is executed in the bubbling phase(INNER TO OUTER EXCECUTION).
 
     // document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");
@@ -47,13 +48,15 @@
     
     // document.getElementById('google').addEventListener('click',function(e){
     //     e.preventDefault();
-    //     e.stopPropagation()
+    //     e.stopPropagation() //- to stop the bubbling of events.
     //     console.log("google clicked");
     // }, false)
    
-    
+    //remove image when clicked on image
+
     document.querySelector('#images').addEventListener('click', function(e){
-        console.log(e.target.tagName);
+        console.log(e.target.tagName); //Target gives the sopurce of the event where it is coming from, like the image is clicked. || tagName- This is important as the tagname is given asIMG, so it will only remove IMG as we have given strict check by "if" down.
+        
         if (e.target.tagName === 'IMG') {
             console.log(e.target.id);
             let removeIt = e.target.parentNode

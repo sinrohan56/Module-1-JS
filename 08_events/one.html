@@ -1,3 +1,6 @@
+//Events are just exceptions cases by which the normal sequential program flow is broke and excecuted as commanded(like click, button press, keyboard clicks and more)
+//interview questions are asked like 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,11 +24,12 @@
 <script>
     // document.getElementById('owl').onclick = function(){
     //     alert("owl clicked")
-    // }
+    // } // no problem in this approach for the click event, but this provides limited feature, so using addeventlistener is one of the best options available now.
+
 
      // attachEvent()
     // jQuery - on
-
+//TO READ THESE EVENTS ON MDN
     // type, timestamp, defaultPrevented
     // target, toElement, srcElement, currentTarget,
     // clientX, clientY, screenX, screenY
@@ -34,6 +38,7 @@
     // document.getElementById('images').addEventListener('click', function(e){
     //     console.log("clicked inside the ul");
     // }, false)
+//tHIRD PARAMETER IS DEFAULT FALSE, BUT TRUE IS ALSO THERE, AND THE CONCEPT BEHIND THESE ARE- **true - The handler is executed in the capturing phase(OUTER TO INNER EXCECUTION). **false - The handler is executed in the bubbling phase(INNER TO OUTER EXCECUTION).
 
     // document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");

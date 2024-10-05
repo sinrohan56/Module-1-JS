@@ -1,0 +1,73 @@
+Basic Questions:
+What is an event in JavaScript?
+
+Explain the concept of events in JavaScript and how they interact with the DOM.
+How do you add an event listener to an element?
+
+Example: Describe the use of addEventListener and its syntax.
+js
+Copy code
+element.addEventListener('click', function);
+What is the difference between onclick and addEventListener?
+
+Discuss differences such as multiple event listeners on the same element.
+What are event handlers?
+
+Explanation of the function that executes when an event is triggered.
+What are common types of events in JavaScript?
+
+List events like click, mouseover, keydown, submit, etc.
+How do you prevent the default behavior of an event?
+
+Example: Using event.preventDefault() to stop the default action of a form submission or link click.
+What is event propagation?
+
+Explain event capturing, bubbling, and how the event goes through the DOM hierarchy.
+What is event delegation?
+
+Describe how event delegation allows a single handler to manage events for multiple child elements, often using event bubbling.
+Intermediate Questions:
+How does event bubbling work in JavaScript?
+
+Explain the concept of event bubbling and how an event propagates from the target element to the root of the DOM.
+How can you stop event propagation?
+
+Example: Using event.stopPropagation() to prevent an event from propagating up the DOM tree.
+What is the difference between event.target and event.currentTarget?
+
+Discuss the difference between the element that triggered the event and the element on which the event listener is attached.
+What are synthetic events in React?
+
+Explain how React's synthetic events work compared to native JavaScript events.
+What are the parameters for addEventListener?
+
+Discuss how to use options such as { once: true }, { passive: true }, and { capture: true }.
+How do you remove an event listener?
+
+Example: Using removeEventListener to unbind an event listener from an element.
+How do you implement event delegation in JavaScript?
+
+Show how to use event delegation with an example, like handling a click event on multiple list items via the parent element.
+Advanced Questions:
+How do you handle touch events for mobile devices in JavaScript?
+
+Describe handling touchstart, touchmove, and touchend events.
+How would you throttle or debounce an event listener in JavaScript?
+
+Explain the difference between throttling and debouncing, and show how they are applied to events like scroll or resize.
+How does passive event listener optimization work?
+
+Discuss how { passive: true } helps in improving performance by informing the browser that the event listener will not call preventDefault().
+What is the purpose of e.stopImmediatePropagation()?
+
+Explain how this method stops the event from propagating and also prevents any other listeners of the same event on the current element from being called.
+How do custom events work in JavaScript?
+
+Example: Explain how to create and dispatch custom events using the CustomEvent constructor.
+How can you handle complex drag-and-drop events in JavaScript?
+
+Discuss handling dragstart, dragover, drop, and how these events can be used to implement drag-and-drop functionality.
+What is the once option in addEventListener?
+
+Discuss how to make an event listener execute only once and then automatically remove itself.
+By preparing for these questions, you'll have a strong foundation in JavaScript event handling concepts and be ready for different levels of interview challenges.
